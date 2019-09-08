@@ -27,7 +27,7 @@ def search(search_words):  # inefficient search
     # then searching through tags
     for i in search_words:
         for key, value in org_data.items():
-            if i in value["tags"]:
+            if i in " ".join(value["tags"]).split(" "):
                 if key not in name_list and key not in tag_list:  # preventing the inclusion of orgs that are already in name_list
                     tag_list[key] = 1
                 elif key in tag_list:
@@ -76,15 +76,15 @@ def organization():
 @app.route("/search", methods=["GET", "POST"])
 def org_search():
     if request.method == "POST":
-        print("search post")
         search_words = request.form["search"]
-        print("#2")
         with open(org_json) as file:
             org_date = json.load(file)
         org_endpoint = search(search_words)
-        org_list = [org_date[i]["name"] for i in org_endpoint]
-        print("#3")
-        return render_template("search.html", org_list = org_list, org_endpoint = org_endpoint)
+        if len(org_endpoint) != 0:
+            org_list = [org_date[i]["name"] for i in org_endpoint]
+            return render_template("search.html", org_list = org_list, org_endpoint = org_endpoint)
+        else:
+            return render_template("search.html")
     return render_template("search.html")
 
 @app.route("/organizations/<org_name>", methods=["GET"])
@@ -103,10 +103,11 @@ def org_info(org_name):
         dues = org_data[org_name]["dues"]
         size = org_data[org_name]["size"]
         tags = org_data[org_name]["tags"]
+        FAQ = org_data[org_name]["FAQ"]
         if abbreviation != "":
-            return render_template("organization.html", title=title, abbreviation=abbreviation, description=description, contact=contact, website=website, level=level, dues=dues, size=size, tags=tags)
+            return render_template("organization.html", title=title, abbreviation=abbreviation, description=description, contact=contact, website=website, level=level, dues=dues, size=size, tags=tags, FAQ = FAQ)
         else:
-            return render_template("organization.html", title=title, description=description, contact=contact, website=website, level=level, dues=dues, size=size, tags=tags)
+            return render_template("organization.html", title=title, description=description, contact=contact, website=website, level=level, dues=dues, size=size, tags=tags, FAQ=FAQ)
     except:
         return make_response(render_template("not_found.html"), 404)
 
@@ -118,6 +119,11 @@ def org_info(org_name):
 # @app.route("/organizations/<org_id>/update", methods=["POST"])
 # def org_update(org_id):
 #     return make_response(200)
+
+# any invalid endpoint
+@app.route("/<random>")
+def invalid(random):
+    return render_template("not_found.html")
 
 if __name__ == "__main__":
     app.run(debug = True)

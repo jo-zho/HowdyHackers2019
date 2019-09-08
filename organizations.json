@@ -8,7 +8,8 @@
         "dues": "$40 / year",
         "size": "51 - 100",
         "website": "http://abattery.tamu.edu",
-        "description": "A-Battery is a Corps of Cadets and Fightin' Texas Aggie Band outfit that exists to challenge people physically, mentally, and morally, to cultivate lifelong relationships, and to shape leaders of character prepared for the future."
+        "description": "A-Battery is a Corps of Cadets and Fightin' Texas Aggie Band outfit that exists to challenge people physically, mentally, and morally, to cultivate lifelong relationships, and to shape leaders of character prepared for the future.",
+        "FAQ": {"Where are the meetings?": "White Hall", "When do you meet up?": "Ans2", "Q3":"Ans3"}
     },
     "A&M-BITCOIN-CLUB": {
         "name": "A&M Bitcoin Club",
@@ -19,7 +20,8 @@
         "dues": "$20 / semester",
         "size": "1-30",
         "website": "N/A",
-        "description": "To further the education and adoption of Bitcoin."
+        "description": "To further the education and adoption of Bitcoin.",
+        "FAQ": {"Where are the meetings?": "Ans1", "When do you meet up?": "Ans2", "Q3":"Ans3"}
     },
     "A&M-PHOTOGRAPHY-CLUB": {
         "name": "A&M Photography Club",
@@ -30,7 +32,8 @@
         "dues": "$40 / year",
         "size": "51-100",
         "website": "https://maroonlink.tamu.edu/organization/photography_club",
-        "description": "This organization is aimed towards A&M students who enjoy photography and taking pictures as a lifestyle. A&M Photography Club provides a more interconnected campus social network through photo sharing and collaboration among A&M students and A&M student groups while promoting awareness of the enriching opportunities available to all students. We intend to enrich the Aggie experience by organizing a photography network of students who enjoy taking pictures and making their photos easily accessible for the enjoyment of everyone in the A&M community."
+        "description": "This organization is aimed towards A&M students who enjoy photography and taking pictures as a lifestyle. A&M Photography Club provides a more interconnected campus social network through photo sharing and collaboration among A&M students and A&M student groups while promoting awareness of the enriching opportunities available to all students. We intend to enrich the Aggie experience by organizing a photography network of students who enjoy taking pictures and making their photos easily accessible for the enjoyment of everyone in the A&M community.",
+        "FAQ": {"Where are the meetings?": "Varied locations", "When do you meet up?": "Ans2", "Q3":"Ans3"}
         },
     "AGGIE-CODING-CLUB": {
         "name": "Aggie Coding Club",
@@ -41,7 +44,8 @@
         "dues": "no dues",
         "size": "51-100",
         "website": "http://aggiecodingclub.com",
-        "description": "Provides an opportunity to have real world experiences through project development and valuable networking opportunities."
+        "description": "Provides an opportunity to have real world experiences through project development and valuable networking opportunities.",
+        "FAQ": {"Where are the meetings?": "HRBB 124", "When do you meet up?": "Monday from 7 - 9 pm", "Q3":"Ans3"}
         },
     "ZETA-TAU-ALPHA": {
         "name": "Zeta Tau Alpha",
@@ -52,6 +56,7 @@
         "dues": "No dues",
         "size": "300-1000",
         "website": "http://tamu.zetataualpha.org/",
-        "description": "The purpose of Zeta Tau Alpha is to intensify friendship, promote happiness among its members, to perform such deeds, and to mould such opinions as will conduce to the building up of a purer and nobler womanhood in the world."
+        "description": "The purpose of Zeta Tau Alpha is to intensify friendship, promote happiness among its members, to perform such deeds, and to mould such opinions as will conduce to the building up of a purer and nobler womanhood in the world.",
+        "FAQ": {"Where are the meetings?": "1403 Athens Drive, College Station", "When do you meet up?": "Ans2", "Q3":"Ans3"}
         }
 }

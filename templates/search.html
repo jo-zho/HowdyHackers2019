@@ -1,5 +1,9 @@
 {% extends "layout.html"%}
 
+{% block head %} 
+    <title>Search</title>
+{% endblock %}
+
 {% block body%}
 <div class="content">
 <center>
@@ -9,9 +13,13 @@
 </center>
 
 <div style="padding: 0% 20%">
+{% if org_list %}
 {% for i in range(org_list | length) %}
 <h6><a href="/organizations/{{org_endpoint[i]}}" class="org-list">{{org_list[i]}}</a></h6>
 {% endfor %}
+{% else %}
+<h6> No Results Found</h6>
+{% endif %}
 </div>
 
 </div>

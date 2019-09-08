@@ -57,25 +57,43 @@ a {
 
 .org-content{
     float: left;
-    width: 70%;
+    width: 60%;
+    padding: 0% 2%;
     box-sizing: border-box;
-    border-right: 1px solid gray;
+    border-right: 1px solid lightgray;
 }
 .org-aside{
     float: right;
-    width: 30%;
+    width: 40%;
     padding-left: 2%; 
     box-sizing: border-box;
 }
 
+.grid-container{
+    display: grid;
+    padding-bottom: 0%
+}
+
+.faq{
+    padding: 0% 20%;
+}
+
 @media(max-width: 600px){
+    .content{
+        margin: 5%
+    }
     .org-content{
         float: none;
         width: 100%;
         border-right: 0px;
+        padding: 0% 2%;
     }
     .org-aside{
         float: right;
         width: 100%;
+        padding: 0% 2%;
+    }
+    .faq{
+        padding: 0%;
     }
 }

@@ -7,6 +7,7 @@
 
 {% block body %}
 <body>
+<div class= "grid-container">
 <div class = "content">
     <h3><center><div class="format"> {{title}} </div></center></h3>
     <hr>
@@ -21,10 +22,19 @@
     </section> 
     <aside class="org-aside">
             <h6><div class="format1">Contact: {{contact}} </div></h6>
-            <h6><div class="format1">Website: <a href="{{website}}" target="_blank">{{website}}</a></div> </h6>
-    </aside>   
-    
-</hr>
+            <h6><div class="format1">Website: {% if website != "N/A" %} <a href="{{website}}" target="_blank">{{website}}</a>
+                                                {% else %} {{website}}  {% endif %} </div> </h6>
+    </aside> 
+</div>
+</div>
+<div class="content">
+    <hr>
+    <center><h4 class="format">FAQ</h4></center>
+    {% for key, value in FAQ.items()%}
+        <h6 class="format faq">{{key}}</h6>
+        <h6 class="faq">{{value}}</h6>
+    {% endfor %}
+</div> 
 
 </body>
 {% endblock %}
