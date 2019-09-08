@@ -84,7 +84,7 @@ def org_search():
             return render_template("search.html", org_list = org_list, org_endpoint = org_endpoint)
         else:
             return render_template("search.html")
-    return render_template("search.html")
+    return render_template("search.html", org_list = [""], org_endpoint = [""])
 
 @app.route("/organizations/<org_name>", methods=["GET"])
 def org_info(org_name):
