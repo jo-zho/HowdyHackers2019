@@ -36,6 +36,7 @@ a {
 
 .org-list{
     text-decoration: none;
+    font-weight: bold;
 }
 
 .org-list:hover{

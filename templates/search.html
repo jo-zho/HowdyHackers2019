@@ -15,8 +15,13 @@
 <div style="padding: 0% 20%">
 {% if org_list %}
 {% for i in range(org_list | length) %}
+<div style="box-shadow: 5px 10px 15px lightgray; padding: 2%; margin-bottom: 5px;">
 <h6><a href="/organizations/{{org_endpoint[i]}}" class="org-list">{{org_list[i]}}</a></h6>
+<h6>{{org_descript[i]}}</h6>
+</div>
 {% endfor %}
+{% elif get_request %}
+
 {% else %}
 <h6> No Results Found</h6>
 {% endif %}

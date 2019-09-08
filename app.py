@@ -81,10 +81,11 @@ def org_search():
         org_endpoint = search(search_words)
         if len(org_endpoint) != 0:
             org_list = [org_date[i]["name"] for i in org_endpoint]
-            return render_template("search.html", org_list = org_list, org_endpoint = org_endpoint)
+            org_descript = [org_date[i]["description"] for i in org_endpoint]
+            return render_template("search.html", org_list = org_list, org_endpoint = org_endpoint, org_descript = org_descript)
         else:
             return render_template("search.html")
-    return render_template("search.html", org_list = [""], org_endpoint = [""])
+    return render_template("search.html", get_request = True)
 
 @app.route("/organizations/<org_name>", methods=["GET"])
 def org_info(org_name):
