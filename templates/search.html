@@ -1,0 +1,18 @@
+{% extends "layout.html"%}
+
+{% block body%}
+<div class="content">
+<center>
+<form action="/search" method="POST" style="padding-bottom: 10px">
+    <input class= "textfield" type="text" size=100% name="search" placeholder="Search" style="border-top:none; border-left:none; border-right:none; line-height:2.5em";>
+</form>
+</center>
+
+<div style="padding: 0% 20%">
+{% for i in range(org_list | length) %}
+<h6><a href="/organizations/{{org_endpoint[i]}}" class="org-list">{{org_list[i]}}</a></h6>
+{% endfor %}
+</div>
+
+</div>
+{% endblock %}

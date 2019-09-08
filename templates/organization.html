@@ -1,7 +1,30 @@
+<!-- layout for a single organization -->
 {% extends "layout.html" %}
+
+{% block head %}
+<title>C-ORG - {{title}}</title>
+{% endblock %}
+
 {% block body %}
+<body>
+<div class = "content">
+    <h3><center><div class="format"> {{title}} </div></center></h3>
+    <hr>
+    <br>
 
-<h1>MORE TESTING!
-</h1>
+    <section class="org-content">
+        {% if abbreviation %} <h6><div class="format">Abbreviation: </div> {{abbreviation}} </h6>{% endif %}
+        <h6><div class="format">Description:</div> {{description}}</h6>  
+        <h6><div class="format">Classification Accepted:</div> {{level}} </h6>
+        <h6><div class="format">Size:</div> {{size}} </h6>
+        <h6><div class="format">Dues:</div> {{dues}} </h6>  
+    </section> 
+    <aside class="org-aside">
+            <h6><div class="format1">Contact: {{contact}} </div></h6>
+            <h6><div class="format1">Website: <a href="{{website}}" target="_blank">{{website}}</a></div> </h6>
+    </aside>   
+    
+</hr>
 
+</body>
 {% endblock %}

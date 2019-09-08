@@ -1,0 +1,22 @@
+<!-- showing a list of organizations -->
+{% extends "layout.html" %}
+
+{% block head %}
+<title>Organizations</title>
+{% endblock %}
+
+{% block body %}
+<div class = "content">
+    <h3>List of Student Organizations @ TAMU</h3>
+    <h4>Find your perfect match!</h4>
+
+    <ul>
+    {% for key, value in org_data.items()%} 
+        <li> <a href="/organizations/{{key}}" class="org-list"> {{value["name"]}} </a> </li>
+    {% endfor %}
+    </ul>
+    
+
+</div>
+
+{% endblock %}

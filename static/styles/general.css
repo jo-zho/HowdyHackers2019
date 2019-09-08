@@ -1,0 +1,81 @@
+.content{
+    
+    margin: 5% 10%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    color: black;
+}
+.mdl-layout__header {
+    background-color: #500000;
+}
+
+.material-icons {
+    color: white;
+    
+}
+
+.mdl-textfield__input {
+    color: white;
+}
+
+.mdl-layout-title{
+    color: white;
+}
+
+.project-name{
+    font-size: 24px;
+    font-weight: bold; 
+}
+
+.org-list{
+    text-decoration: none;
+}
+
+.org-list:hover{
+    background-color: #500000;
+    color: white;
+    padding: 2px;
+    font-family: quicksand;
+}
+
+.format{ 
+    font-weight: bold;
+}
+
+.format1{
+    font-weight: bold;
+    /* text-align: right; */
+    
+}
+
+.org-content{
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+    border-right: 1px solid gray;
+}
+.org-aside{
+    float: right;
+    width: 30%;
+    padding-left: 2%; 
+    box-sizing: border-box;
+}
+
+@media(max-width: 600px){
+    .org-content{
+        float: none;
+        width: 100%;
+        border-right: 0px;
+    }
+    .org-aside{
+        float: right;
+        width: 100%;
+    }
+}

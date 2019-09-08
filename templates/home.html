@@ -1,5 +1,23 @@
 {% extends "layout.html" %}
-{% block body %}
-<div><h1>TESTING!</h1></div>
+{% block head %}
+<title>C-ORGS</title>
 
+
+{% endblock %}
+
+{% block body %}
+<!-- Simple Textfield -->
+<center>
+  <img width=25% src = "static/images/tam-logo.png" >
+
+<form action="{{url_for('org_search')}}" method="POST">
+  <div>
+    <input class="textfield" type="text" name="search" size=100% placeholder="See your favorite student orgs on C-ORG" style="border-top:none; border-left:none; border-right:none; line-height:2.5em";>
+  </div>
+</form>
+
+<h5>  </h5>
+<h6>C-ORG is a student organization search tool, exclusively 'For Aggies by Aggies'</h6>
+</center>
+ 
 {% endblock %}

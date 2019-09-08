@@ -1,0 +1,57 @@
+{
+   "A-BATTERY": {
+        "name": "A Battery",
+        "abbrev": "A-Batt",
+        "contact": "fhauffe@corps.tamu.edu",
+        "level": ["UG", "G"],
+        "tags": ["CORPS"],
+        "dues": "$40 / year",
+        "size": "51 - 100",
+        "website": "http://abattery.tamu.edu",
+        "description": "A-Battery is a Corps of Cadets and Fightin' Texas Aggie Band outfit that exists to challenge people physically, mentally, and morally, to cultivate lifelong relationships, and to shape leaders of character prepared for the future."
+    },
+    "A&M-BITCOIN-CLUB": {
+        "name": "A&M Bitcoin Club",
+        "abbrev": "",
+        "contact": "mattlohstroh@tamu.edu",
+        "level": ["UG", "G", "F/S"],
+        "tags": ["LEARNING"],
+        "dues": "$20 / semester",
+        "size": "1-30",
+        "website": "N/A",
+        "description": "To further the education and adoption of Bitcoin."
+    },
+    "A&M-PHOTOGRAPHY-CLUB": {
+        "name": "A&M Photography Club",
+        "abbrev": "Photo Club",
+        "contact": "photographyclub.tamu@gmail.com",
+        "level": ["UG", "G", "F/S"],
+        "tags": ["PHOTOGRAPHY"],
+        "dues": "$40 / year",
+        "size": "51-100",
+        "website": "https://maroonlink.tamu.edu/organization/photography_club",
+        "description": "This organization is aimed towards A&M students who enjoy photography and taking pictures as a lifestyle. A&M Photography Club provides a more interconnected campus social network through photo sharing and collaboration among A&M students and A&M student groups while promoting awareness of the enriching opportunities available to all students. We intend to enrich the Aggie experience by organizing a photography network of students who enjoy taking pictures and making their photos easily accessible for the enjoyment of everyone in the A&M community."
+        },
+    "AGGIE-CODING-CLUB": {
+        "name": "Aggie Coding Club",
+        "abbrev": "ACC",
+        "contact": "aggiecodingclub@gmail.com",
+        "level": ["UG", "G", "F/S"],
+        "tags": ["COMPUTER SCIENCE","CS", "CODING", "NETWORKING"],
+        "dues": "no dues",
+        "size": "51-100",
+        "website": "http://aggiecodingclub.com",
+        "description": "Provides an opportunity to have real world experiences through project development and valuable networking opportunities."
+        },
+    "ZETA-TAU-ALPHA": {
+        "name": "Zeta Tau Alpha",
+        "abbrev": "ZTA",
+        "contact": "tamuztapresident@gmail.com",
+        "level": ["UG"],
+        "tags": ["GREEK LIFE", "NETWORKING"],
+        "dues": "No dues",
+        "size": "300-1000",
+        "website": "http://tamu.zetataualpha.org/",
+        "description": "The purpose of Zeta Tau Alpha is to intensify friendship, promote happiness among its members, to perform such deeds, and to mould such opinions as will conduce to the building up of a purer and nobler womanhood in the world."
+        }
+}

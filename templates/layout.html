@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-cyan.min.css" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-purple.min.css" />
+    <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='styles/general.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+    {% block head %}{% endblock %}
 
 </head>
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
             mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
+    <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
+        <a href="/" style="text-decoration: none;"><span class="mdl-layout-title project-name">C-ORG</span></a>
+        
       <div class="mdl-layout-spacer"></div>
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
@@ -22,19 +28,21 @@
                for="fixed-header-drawer-exp">
           <i class="material-icons">search</i>
         </label>
+        <form action="{{url_for('org_search')}}" method="POST">
         <div class="mdl-textfield__expandable-holder">
-          <input class="mdl-textfield__input" type="text" name="sample"
+          <input class="mdl-textfield__input" type="text" name="search"
                  id="fixed-header-drawer-exp">
         </div>
+        </form>
       </div>
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Title</span>
+    <span class="mdl-layout-title"><a class="mdl-navigation__link project-name" href="/"> C-ORG</a></span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="home">Home</a>
-      <a class="mdl-navigation__link" href="organization">Organization</a>
-
+      <a class="mdl-navigation__link" href="/about">About</a>
+      <a class="mdl-navigation__link" href="/organizations">Organizations</a>
+      <a class="mdl-navigation__link" href="/search">Search</a>
     </nav>
   </div>
   <main class="mdl-layou    t__content">
