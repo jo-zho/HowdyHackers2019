@@ -47,6 +47,30 @@
         "description": "Provides an opportunity to have real world experiences through project development and valuable networking opportunities.",
         "FAQ": {"Where are the meetings?": "HRBB 124", "When do you meet up?": "Monday from 7 - 9 pm", "Q3":"Ans3"}
         },
+    "TEXAS-A&M-COMPUTING-SOCIETY":{
+        "name": "Texas A&M Computing Society",
+        "abbrev": "TACS",
+        "contact": "tamuztapresident@gmail.com",
+        "level": ["UG", "G", "F/S"],
+        "tags": ["CODING", "NETWORKING", "COMPUTER SCIENCE", "CS"],
+        "dues": "20/Year or 10/Semester",
+        "size": "31-50",
+        "website": "http://tacs.tamu.edu",
+        "description": "The purpose of the Texas A&M Computing Society is twofold. First, we strive to encourage students to explore more fully all aspects of computing technology. Towards this end, TACS hosts guest speakers from both industry and academia. Second, TACS provides an opportunity for personal growth through workshops and social interaction.",
+        "FAQ": {"Where are the meetings?": "HRBB 113", "When do you meet up?": "Ans2", "Q3":"Ans3"}
+        },
+    "TEXAS-A&M-DATA-ANALYTICS-CLUB":{
+        "name": "Texas A&M Data Analytics Club",
+        "abbrev": "TDAC",
+        "contact": "tdac.prez@gmail.com",
+        "level": ["UG", "G", "F/"],
+        "tags": ["CODING", "NETWORKING", "COMPUTER SCIENCE", "CS", "DATA SCIENCE"],
+        "dues": "$40 per year",
+        "size": "100-300",
+        "website": "https://tamuanalyticsclub.wixsite.com/tdac2019",
+        "description": "The Texas A&M Data Analytics Club (TDAC) is a student organization that provides an analytics-inspired environment where Aggies can elevate their college experience and enhance their leadership skills through bi-weekly technical workshops and corporate events. We have grown substantially the last few years, with over 150 students from various degrees and majors. Our vision is to become the university's premier hub for networking and recruiting in data analytics, which can be seen in our sponsorship with Texas A&M's first annual Datathon to be hosted on October 2019.",
+        "FAQ": {"Where are the meetings?": "ETB, Wehner, Rudder", "When do you meet up?": "Ans2", "Q3":"Ans3"}
+        },
     "ZETA-TAU-ALPHA": {
         "name": "Zeta Tau Alpha",
         "abbrev": "ZTA",

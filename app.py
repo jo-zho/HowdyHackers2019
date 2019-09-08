@@ -25,13 +25,12 @@ def search(search_words):  # inefficient search
                     name_list[key] += 1 # adds one to counter since match occurred
 
     # then searching through tags
-    for i in search_words:
-        for key, value in org_data.items():
-            if i in " ".join(value["tags"]).split(" "):
-                if key not in name_list and key not in tag_list:  # preventing the inclusion of orgs that are already in name_list
-                    tag_list[key] = 1
-                elif key in tag_list:
-                    tag_list[key] += 1
+    for key, value in org_data.items():
+        if " ".join(search_words) in value["tags"]:
+            if key not in name_list and key not in tag_list:  # preventing the inclusion of orgs that are already in name_list
+                tag_list[key] = 1
+            elif key in tag_list:
+                tag_list[key] += 1
 
     # create list for org names arranged in priority of name (from greatest value to least)  and tags (from greatest to least)
     final_list =[]
@@ -49,7 +48,7 @@ def search(search_words):  # inefficient search
 
 @app.route("/", methods=["GET", "POST"])
 def home():
-    return render_template("home.html")
+    return render_template("index.html")
 
 @app.route("/about", methods=["GET", "POST"])
 def about():
@@ -93,13 +92,15 @@ def org_info(org_name):
         org_name = org_name.upper()
         with open(org_json) as file:
             org_data = json.load(file)
-            
+        
+        uni_level = {"UG": "Undergraduate", "G": "Graduate", "F/S": "Faculty and Staff"}
+
         title = org_data[org_name]["name"]
         abbreviation = org_data[org_name]["abbrev"]
         description = org_data[org_name]["description"]
         contact = org_data[org_name]["contact"]
         website = org_data[org_name]["website"]
-        level = org_data[org_name]["level"]
+        level = ", ".join([uni_level[l] for l in org_data[org_name]["level"]])
         dues = org_data[org_name]["dues"]
         size = org_data[org_name]["size"]
         tags = org_data[org_name]["tags"]
